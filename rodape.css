@@ -1,0 +1,29 @@
+
+  .custom-footer {
+    background-color: #000;
+    color: #cccccc;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+  }
+  
+  .custom-footer p {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .custom-footer .social-links {
+    margin-top: 10px;
+  }
+  
+  .custom-footer .social-links a img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    vertical-align: middle;
+  }
+  
+  .custom-footer a {
+    text-decoration: none;
+  }
+  

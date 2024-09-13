@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-bbr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-page</title>
+    <link rel="stylesheet" href="sytle-login.css">
+</head>
+<body>
+       <div class="headerlogin">
+        <div class="logo"><a href="#"><img src="img/Ghost+logo.png" alt="logo"></a></div>
+       </div>
+       <div class="login-body">
+            <div class="login-box">
+                <h2>Entrar</h2>
+                <form>
+                 <div class="email-box"><input required type="email" placeholder="Email or phone number"></div>   
+                 <div class="senha-box"><input required type="password" placeholder="password"></div>
+                 <div>
+                    <a href="loading.html">
+                        <button class="submit">Entrar</button>
+                    </a>
+                </div>
+                
+
+
+                </form>
+                <div class="suporte">
+                    <div class="remember">
+                        <span><input type="checkbox" style="margin: 0; padding: 0; height: 13px;"></span>
+                        <span>Lembre-se de min</span>
+                    </div>
+                    <div class="help"><a href="#">You need a help?</a></div>
+                    
+                    <div class="login-footer"> 
+                        <div class="login-amazon"> 
+                            <span><img height="25px"src="img/Amazon-512.webp" alt="amazon"></span>
+                            <span><a href="https://www.amazon.com/-/pt/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fyour-account%2F%3Fref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0">Conectar com Amazon</a></span>
+                                   
+
+                        </div>
+                        <div class="sign-up">
+
+                        </div>
+                        <div class="terms">
+                       <p>
+                        Assista aos melhores conteúdos do mundo inteiro com o Ghost+, um serviço de streaming gratuito. Aproveite filmes, séries e documentários sem pagar nada. Com o plano anual, você parcela em até 12x de R$ 00,00/mês sem juros (R$ 00,00 por ano).<a href="#">Saiba mais</a></p>
+                        </div>
+                </div>
+            </div>
+       </div>   
+</body>
+<script>
+    document.querySelector('form').addEventListener('submit', function(event) {
+        event.preventDefault(); 
+
+        
+        
+        const email = document.querySelector('input[type="email"]').value;
+        const senha = document.querySelector('input[type="password"]').value;
+
+        
+        if (email === 'useradm@gmail.com' && senha === 'adm123') {
+            
+            window.location.href = 'loading.html';
+        } else {
+            
+            alert('Email ou senha incorretos. Tente novamente.');
+        }
+    });
+</script>
+</html>

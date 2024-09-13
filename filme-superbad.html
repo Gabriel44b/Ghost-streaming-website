@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghost/filme/superbad</title>
+    <link rel="stylesheet" href="videoplay.css">
+</head>
+<body>
+    <div class="container">
+        <div class="video-main">
+            <video id="main-video" controls autoplay>
+                <source src="#" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+        </div>
+        <div class="video-list">
+            <div class="video-item" data-src="series/SUPER BAD (TENTE NÃO RIR).mp4">
+                <img src="series/terro00.png" alt="Thumbnail 1">
+            </div>
+            <div class="video-item" data-src="#">
+                <img src="series/drama05.jpg" alt="Thumbnail 1">
+            </div>
+            <div class="video-item" data-src="#">
+                <img src="series/oscar5.jpg" alt="Thumbnail 1">
+            </div>
+            <div class="video-item" data-src="#">
+                <img src="series/terro67.webp" alt="Thumbnail 1">
+            </div>
+            <div class="video-item" data-src="#">
+                <img src="series/terror1.jpg" alt="Thumbnail 1">
+            </div>
+            <div class="video-item" data-src="#">
+                <img src="series/drama 08.jpg"alt="Thumbnail 1">
+            </div>
+            <div class="video-item" data-src="#">
+                <img src="series/oscar3.jpg" alt="Thumbnail 1">
+            </div>
+          
+          
+           
+            <!-- Adicionar mais videos conforme necessário -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
+<script>document.querySelectorAll('.video-item').forEach(item => {
+    item.addEventListener('click', function() {
+        const videoSrc = this.getAttribute('data-src');
+        const mainVideo = document.getElementById('main-video');
+        mainVideo.src = videoSrc;
+        mainVideo.play();
+    });
+});
+</script>

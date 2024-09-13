@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #131313;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.video-main {
+    margin-bottom: 20px;
+}
+
+.video-main video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.video-list {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+}
+
+.video-item {
+    cursor: pointer;
+    flex: 0 0 auto;
+    margin: 5px;
+}
+
+.video-item img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease ;
+}
+
+.video-item:hover img {
+    transform: scale(1.1);
+    opacity: 0.5;
+}
+
+
+
+video::-webkit-media-controls-panel {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+video::-webkit-media-controls-play-button,
+video::-webkit-media-controls-volume-slider,
+video::-webkit-media-controls-mute-button,
+video::-webkit-media-controls-fullscreen-button,
+video::-webkit-media-controls-current-time-display,
+video::-webkit-media-controls-time-remaining-display,
+video::-webkit-media-controls-seek-back-button,
+video::-webkit-media-controls-seek-forward-button {
+    color: #FFA500; 
+}
+
+/* Estilizar a barra de progresso */
+video::-webkit-media-controls-timeline {
+    background: ;
+    
+}
+
+video::-webkit-media-controls-timeline::-webkit-media-controls-slider {
+    background: #FFA500; 
+}
+
+/* Ocultar a barra de rolagem em todos os navegadores */
+.elemento-com-scroll {
+    overflow: hidden; /* Oculta a barra de rolagem */
+}
+
+/* Ocultar a barra de rolagem apenas no Chrome, Safari e Edge */
+.elemento-com-scroll::-webkit-scrollbar {
+    display: none; /* Oculta a barra de rolagem */
+}
+
+/* Estilizar a barra de rolagem no Chrome, Safari e Edge */
+.elemento-com-scroll::-webkit-scrollbar {
+    width: 12px; /* Largura da barra de rolagem */
+}
+
+.elemento-com-scroll::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Cor de fundo da trilha */
+}
+
+.elemento-com-scroll::-webkit-scrollbar-thumb {
+    background: #FFA500; /* Cor da barra de rolagem */
+    border-radius: 10px; /* Bordas arredondadas da barra de rolagem */
+}
+
+.elemento-com-scroll::-webkit-scrollbar-thumb:hover {
+    background: #ff8c00; /* Cor da barra de rolagem ao passar o mouse */
+}
+

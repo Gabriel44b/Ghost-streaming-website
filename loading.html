@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghost+</title>
+    <link rel="stylesheet" href="loading.css">
+</head>
+<body>
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-circle"></div>
+    </div>
+    
+    <!-- Conteúdo da sua página -->
+    <div class="content">
+        <h1></h1>
+        <p></p>
+    </div>
+
+    <script src="loading-script.js"></script>
+</body>
+</html>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const loadingScreen = document.getElementById('loadingScreen');
+    const content = document.querySelector('.content');
+    
+
+    setTimeout(() => {
+        loadingScreen.style.display = 'none';
+        content.style.opacity = 1;
+
+      
+        window.location.href = 'home.html';
+    }, 4000);
+});
+</script>
